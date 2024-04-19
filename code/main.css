@@ -29,3 +29,17 @@
   .container ul li a {
     color: #f2fce3;
   }
+
+/* About Us */
+/* History */
+#history {
+  width: 600px;
+}
+
+#history td:nth-child(even) {
+  padding-bottom: 30px;
+}
+
+#history th {
+  text-align: left;
+}
