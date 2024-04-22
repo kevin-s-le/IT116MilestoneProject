@@ -33,13 +33,22 @@
 /* About Us */
 /* History */
 #history {
-  width: 600px;
+  width: 800px;
 }
 
-#history td:nth-child(even) {
-  padding-bottom: 30px;
+#history, th, td {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
 }
 
-#history th {
-  text-align: left;
+th, td {
+  padding: 15px;
+}
+
+#history td:nth-child(odd) {
+  width: 150px;
+}
+
+.highlight {
+  background-color: lightgray;
 }
