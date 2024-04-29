@@ -5,55 +5,150 @@ body {
 h2, h3 {
   margin: 0;
 }
-/* Navbar */
+
+/* Navbar starts */
 
 #navbar {
     position: fixed;
     top: 0;
     right: 0;
-    width: 240px;
-    height: 20;
-    background-color:rgba(51, 51, 51, 0.6);
-    overflow-y: auto;
-    padding-top: 20px;
+    width: 100%;
+    background-color:rgba(51, 51, 51, 0.158);
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-.container {
-    padding: 15px;
-  }
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   
-  .container ul {
+  .nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
-  .container ul li {
-    margin-bottom: 10px;
+  .nav ul li {
+    margin-bottom: 5px;
+    display: inline-block;
   }
   
-  .container ul li a {
+  .nav ul li .navlink {
     color: #f2fce3;
+    text-decoration: none;
+    padding: 0 15px;
+    text-shadow: 4px 4px 4px #0c0000;
   }
+
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+
+/* Navbar ends */
+
+/* Slideshow */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: 200px 0px 0px 400px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 /* Index */
 /* Menu */
 #menus {
   background-color: red;
   text-align: center;
+  padding: 50px;
+  margin-top: 50px;
 }
 #menus h2 {
   font-size: 2em;
-  margin: 30px;
+  margin-bottom: 30px;
 }
 #menus p {
   font-size: 1em;
   color: rgb(61, 60, 60);
 }
 #menus .menu-container {
-  width: 500px;
-  height: 200px;
+  width: 540px;
+  height: 280px;
   background-color: yellow;
   position: relative;
   display: inline-block;
@@ -72,16 +167,17 @@ h2, h3 {
 }
 #menus .menu-detail {
   position: absolute;
-  width: 260px;
+  width: 240px;
 }
 #menus .video-container {
-  margin: 50px 0;
+  margin-top: 50px;
 }
 #main-footer {
   background-color: red;
   padding: 30px;
   color: white;
 }
+
 /* Locations */
 #locations {
   background-color: yellow;
@@ -98,6 +194,7 @@ h2, h3 {
 #locations .info-content h2 {
   font-size: 2em;
 }
+/* button styling */
 #locations .info-content .btn {
   text-decoration: none;
   background-color: red;
@@ -113,6 +210,7 @@ h2, h3 {
   position: relative;
   transition: 0.5s;
 }
+/* hide arrow at first */
 #locations .info-content .btn span:after {
   content: '\00bb';
   position: absolute;
@@ -121,6 +219,7 @@ h2, h3 {
   right: -20px;
   transition: 0.5s;
 }
+/* when hover the button, show arrow */
 #locations .info-content .btn:hover span {
   padding-right: 25px;
 }
@@ -131,6 +230,7 @@ h2, h3 {
 #locations img {
   border-radius: 20px;
 }
+/* addresses */
 #locations .flex-container.align {
   justify-content: space-around;
 }
@@ -148,6 +248,7 @@ h2, h3 {
   border-radius: 50%;
   margin-bottom: 20px;
 }
+
 
 /* About Us */
 /* History */
@@ -170,4 +271,9 @@ th, td {
 
 .highlight {
   background-color: lightgray;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }

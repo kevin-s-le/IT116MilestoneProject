@@ -14,56 +14,74 @@
   <body>
     <header>
       <nav id="navbar">
-        <div class="container">
-          <h1 class="logo"><a href="index.html">Logo/Name</a></h1>
+        <div class="nav">
           <ul>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="events.html">Events & Happy Hour</a></li>
-            <li><a href="photo gallery.html">Photo Gallery</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="order.html">Order Now</a></li>
+            <li><a href="menu.html"class="navlink">Menu</a></li>
+            <li><a href="locations.html"class="navlink">Locations</a></li>
+            <li><a href="events.html"class="navlink">Events</a></li>
+            <li><a href="photo gallery.html"class="navlink">Photo Gallery</a></li>
+            <li><a href="index.html"><img src="media/Logo.png" class="logo" alt="Logo"></a></li>
+            <li><a href="reviews.html"class="navlink">Reviews</a></li>
+            <li><a href="about.html"class="navlink">About</a></li>
+            <li><a href="contact.html"class="navlink">Contact</a></li>
+            <li><a href="order.html"class="navlink">Order Now</a></li>
           </ul>
         </div>
       </nav>
-      <div id="showcase">
-        <div class="container">
-          <div class="showcase-content">
-            <h1><span class="text-primary">Welcome to Restaurantly</span></h1>
-            <p>Delivering great food for more than 18 years</p>
-            <a class="btn" href="Menu.html">Take a look at Our Menu</a>
-          </div>
-        </div>
-      </div>
     </header>
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-    <section id="menus">
-      <div class="container">
-        <h2>Today's Menus</h2>
-        <div class="menu-container">
-          <div class="menu-detail">
-            <h3>Special Lunch</h3>
-            <p>Indulge in a delightful midday feast with our specially curated selection of culinary delights. Enjoy irresistible deals and discounts on our mouthwatering lunch options crafted with care and bursting with flavor.</p>
-          </div>
-          <img src="/media/menu1.jpg" alt="special lunch menu">
-        </div>
-        <div class="menu-container">
-          <div class="menu-detail">
-            <h3>Chicken Delight Dinner</h3>
-            <p>Feline Feast vows to bring plenty of surprises to everyone by introducing new and exotic dishes in the upcoming menu. Under the skilled hands of experienced chefs at Feline Feast, delicious and enticing dishes are carefully and meticulously crafted.</p>
-          </div>
-          <img src="/media/menu2.jpg" alt="special dinner menu">
-        </div>
-        <div class="video-container">
-          <video id="brandVideo" width="640" height="360" controls>
-            <source src="media/brandvideo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">Welcome to Feline Feast!</div>
+    <img src="media/banner1.jpg" style="width:100%">
+    <div class="text">Fresh Ingredients</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">Welcome to Feline Feast!</div>
+    <img src="media/banner2.jpg" style="width:100%">
+    <div class="text">Relaxing Atmosphere</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">Welcome to Feline Feast!</div>
+    <img src="media/banner3.jpg" style="width:100%">
+    <div class="text">Delicious Food</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<!-- Menus -->
+<section id="menus">
+  <div class="container">
+    <h2>Today's Menus</h2>
+    <div class="menu-container">
+      <div class="menu-detail">
+        <h3>Special Lunch</h3>
+        <p>Indulge in a delightful midday feast with our specially curated selection of culinary delights. Enjoy irresistible deals and discounts on our mouthwatering lunch options crafted with care and bursting with flavor.</p>
+      </div>
+      <img src="/media/menu1.jpg" alt="special lunch menu">
+    </div>
+    <div class="menu-container">
+      <div class="menu-detail">
+        <h3>Chicken Delight Dinner</h3>
+        <p>Feline Feast vows to bring plenty of surprises to everyone by introducing new and exotic dishes in the upcoming menu. Under the skilled hands of experienced chefs at Feline Feast, delicious and enticing dishes are carefully and meticulously crafted.</p>
+      </div>
+      <img src="/media/menu2.jpg" alt="special dinner menu">
+    </div>
+      <div class="video-container">
+        <video id="brandVideo" width="640" height="360" controls>
+          <source src="media/brandvideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       </div>
     </section>
+    <!-- Locations -->
     <section id="locations">
       <div class="flex-container">
         <div class="info-content">
@@ -100,6 +118,6 @@
     <footer id="main-footer">
       <p>Restaurantly &copy; 2024, All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
-  </body>
+    <script src="code/script.js"></script>
+</body>
 </html>
