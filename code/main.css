@@ -130,10 +130,28 @@ h2, h3 {
   to {opacity: 1}
 }
 
+/* General Style */
+body {
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-size: 2em;
+  color: #002434;
+}
+h3 {
+  font-size: 1.5em;
+  color: #002434;
+}
+p {
+  font-size: 1em;
+  color: #743c08;
+}
+
 /* Index */
 /* Menu */
 #menus {
-  background-color: #e8d0b3;
+  background-color: #174041;
   text-align: center;
   padding: 50px;
   margin-top: 50px;
@@ -141,6 +159,7 @@ h2, h3 {
 #menus h2 {
   font-size: 2em;
   margin-bottom: 30px;
+  color: #e8d0b3;
 }
 #menus p {
   font-size: 1em;
@@ -149,7 +168,7 @@ h2, h3 {
 #menus .menu-container {
   width: 540px;
   height: 280px;
-  background-color: #fff;
+  background-color: #e8d0b3;
   position: relative;
   display: inline-block;
   margin-right: 30px;
@@ -173,14 +192,14 @@ h2, h3 {
   margin-top: 50px;
 }
 #main-footer {
-  background-color: #e8d0b3;
+  background-color: #174041;
   padding: 30px;
   color: white;
 }
 
 /* Locations */
 #locations {
-  background-color: #743c08;
+  background-color: #eb7228;
   padding: 50px;
 }
 #locations .flex-container {
