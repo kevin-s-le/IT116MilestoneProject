@@ -20,6 +20,7 @@ h2, h3 {
     font-size: 20px;
     display: flex;
     justify-content: center;
+    z-index: 100; /* Position the navbar above the background */
 }
 
 
@@ -270,35 +271,73 @@ p {
 
 
 /* About Us */
+/* Hero Image */
+#hero {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative; /* Set the position of the parent element */
+  display: inline-block; /* Set as an inline block element */
+}
+#hero::before {
+  content: ""; /* Add content to the pseudo-element */
+  position: absolute; /* Set to absolute position */
+  top: 0;
+  left: 0;
+  width: 100%; /* Fill the parent element's width */
+  height: 100%; /* Fill the parent element's height */
+  background-color: rgba(0,0,0,0.5); /* Set a semi-transparent black background (0.5 is the opacity) */
+  z-index: 1; /* Place it above the image */
+}
+#hero img {
+  object-fit: cover;
+  display: block; /* Reset default image properties */
+  width: 100%; /* Make the image fill the width of the parent element */
+  height: auto; /* Maintain aspect ratio of the image */
+  z-index: 2; /* Position the image above the background */
+}
+
+/* Mission Satements */
+.mission-section {
+  text-align: center;
+  margin: 50px auto;
+}
 
 /* Awards */
-#awards {
-  background-color: #eb7228;
+#awards-section {
+  background-color: #e8d0b3;
+  height: 350px;
+  padding: 30px;
 }
-
-#awards .box{
+#awards-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#awards-section .flex-container {
+  display: flex;
+  justify-content: center;
+}
+.award {
   background-color: #fff;
-  margin: 50px 10px 0;
-  padding: 10px 10px;
-  border-radius: 30px;
+  width: 300px;
+  height: 200px;
+  margin: 0 10px;
+  border-radius: 20px;
+  padding-top: 30px;
   text-align: center;
 }
 
-#awards .box i{
-  background-color: #174041;
-  color: white;
-  padding: 20px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-#awards h2{
-  text-align: center;
-}
 
 /* History */
+#history-section h2 {
+  text-align: center;
+  padding: 50px;
+}
 #history {
   width: 800px;
+  margin: 0 auto;
 }
 
 #history, th, td {
@@ -315,7 +354,7 @@ th, td {
 }
 
 .highlight {
-  background-color: lightgray;
+  background-color: #eb7228;
 }
 
 body {
