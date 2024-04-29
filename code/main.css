@@ -1,3 +1,10 @@
+/* reset */
+body {
+  margin: 0;
+}
+h2, h3 {
+  margin: 0;
+}
 /* Navbar */
 
 #navbar {
@@ -29,6 +36,118 @@
   .container ul li a {
     color: #f2fce3;
   }
+
+/* Index */
+/* Menu */
+#menus {
+  background-color: red;
+  text-align: center;
+}
+#menus h2 {
+  font-size: 2em;
+  margin: 30px;
+}
+#menus p {
+  font-size: 1em;
+  color: rgb(61, 60, 60);
+}
+#menus .menu-container {
+  width: 500px;
+  height: 200px;
+  background-color: yellow;
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  padding: 40px;
+  border-radius: 40px;
+  text-align: left;
+}
+#menus .menu-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  right: 40px;
+  border-radius: 20px;
+}
+#menus .menu-detail {
+  position: absolute;
+  width: 260px;
+}
+#menus .video-container {
+  margin: 50px 0;
+}
+#main-footer {
+  background-color: red;
+  padding: 30px;
+  color: white;
+}
+/* Locations */
+#locations {
+  background-color: yellow;
+  padding: 50px;
+}
+#locations .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#locations .info-content {
+  margin-right: 100px;
+}
+#locations .info-content h2 {
+  font-size: 2em;
+}
+#locations .info-content .btn {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  display: inline-block;
+  padding: 20px 35px;
+  margin-top: 30px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+#locations .info-content .btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#locations .info-content .btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#locations .info-content .btn:hover span {
+  padding-right: 25px;
+}
+#locations .info-content .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#locations img {
+  border-radius: 20px;
+}
+#locations .flex-container.align {
+  justify-content: space-around;
+}
+#locations .box {
+  background-color: #fff;
+  margin: 50px 10px 0;
+  padding: 30px 50px;
+  border-radius: 30px;
+  text-align: center;
+}
+#locations .box i {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
 
 /* About Us */
 /* History */
