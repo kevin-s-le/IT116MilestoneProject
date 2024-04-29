@@ -11,7 +11,7 @@
     ></script>
     <link rel="stylesheet" href="code/main.css" />
   </head>
-
+  <body>
     <header>
       <nav id="navbar">
         <div class="nav">
@@ -29,8 +29,6 @@
         </div>
       </nav>
     </header>
-
-<body>
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -57,53 +55,64 @@
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-
-  <section id="features">
-      <div class="specialContainer">
-        <h2>Today's Menu</h2>
-        <div class="showcaseContainer">
-          <h3>Food 1</h3>
-          <p>Food description goes here</p>
-        </div>
-        <div class="showcaseContainer">
-          <h3>Food 2</h3>
-          <p>Food Description goes here</p>
-        </div>
-        <div class="video-container">
-          <video id="brandVideo" width="640" height="360" controls>
-            <source src="media/brandvideo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+<!-- Menus -->
+<section id="menus">
+  <div class="container">
+    <h2>Today's Menus</h2>
+    <div class="menu-container">
+      <div class="menu-detail">
+        <h3>Special Lunch</h3>
+        <p>Indulge in a delightful midday feast with our specially curated selection of culinary delights. Enjoy irresistible deals and discounts on our mouthwatering lunch options crafted with care and bursting with flavor.</p>
+      </div>
+      <img src="/media/menu1.jpg" alt="special lunch menu">
+    </div>
+    <div class="menu-container">
+      <div class="menu-detail">
+        <h3>Chicken Delight Dinner</h3>
+        <p>Feline Feast vows to bring plenty of surprises to everyone by introducing new and exotic dishes in the upcoming menu. Under the skilled hands of experienced chefs at Feline Feast, delicious and enticing dishes are carefully and meticulously crafted.</p>
+      </div>
+      <img src="/media/menu2.jpg" alt="special dinner menu">
+    </div>
+      <div class="video-container">
+        <video id="brandVideo" width="640" height="360" controls>
+          <source src="media/brandvideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       </div>
     </section>
-    <section id="features">
-      <div class="info-content">
-        <h2>Convenient Locations</h2>
-        <p>
-          We have the pleasure of serving customers at our convenient locations
-          in Seattle.
-        </p>
-        <a class="btn" href="locations.html">Visit Us</a>
+    <!-- Locations -->
+    <section id="locations">
+      <div class="flex-container">
+        <div class="info-content">
+          <h2>Convenient Locations</h2>
+          <p>
+            We have the pleasure of serving customers at our convenient locations
+            in Seattle.
+          </p>
+          <a class="btn" href="locations.html"><span>Visit Us</span></a>
+        </div>
+        <img src="media/exterior.jpg" alt="restaurant exterior">
       </div>
-      <div class="info-img"></div>
-      <div class="box">
-        <i class="fa-solid fa-location-dot fa-2x"></i>
-        <h3>North Seattle</h3>
-        <p>9600 College Way N. Seattle, WA 98103</p>
-        <p>Mon - Sat 9am - 6pm</p>
-      </div>
-      <div class="box">
-        <i class="fa-solid fa-location-dot fa-2x"></i>
-        <h3>Capitol Hill</h3>
-        <p>1701 Broadway, Seattle, WA 98122</p>
-        <p>Mon - Sat 9am - 6pm</p>
-      </div>
-      <div class="box">
-        <i class="fa-solid fa-location-dot fa-2x"></i>
-        <h3>South Seattle</h3>
-        <p>6000 16th Ave. SW Seattle, WA 98106</p>
-        <p>Mon - Sat 9am - 6pm</p>
+      <div class="flex-container align">
+        <div class="box">
+          <i class="fa-solid fa-location-dot fa-2x"></i>
+          <h3>North Seattle</h3>
+          <p>9600 College Way N. Seattle, WA 98103</p>
+          <p>Mon - Sat 9am - 6pm</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-location-dot fa-2x"></i>
+          <h3>Capitol Hill</h3>
+          <p>1701 Broadway, Seattle, WA 98122</p>
+          <p>Mon - Sat 9am - 6pm</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-location-dot fa-2x"></i>
+          <h3>South Seattle</h3>
+          <p>6000 16th Ave. SW Seattle, WA 98106</p>
+          <p>Mon - Sat 9am - 6pm</p>
+        </div>
       </div>
     </section>
     <footer id="main-footer">
