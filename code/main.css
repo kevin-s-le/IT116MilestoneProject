@@ -270,6 +270,32 @@ p {
 
 
 /* About Us */
+
+/* Awards */
+#awards {
+  background-color: #eb7228;
+}
+
+#awards .box{
+  background-color: #fff;
+  margin: 50px 10px 0;
+  padding: 10px 10px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#awards .box i{
+  background-color: #174041;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#awards h2{
+  text-align: center;
+}
+
 /* History */
 #history {
   width: 800px;
