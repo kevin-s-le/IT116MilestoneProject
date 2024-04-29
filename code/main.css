@@ -1,3 +1,11 @@
+/* reset */
+body {
+  margin: 0;
+}
+h2, h3 {
+  margin: 0;
+}
+
 /* Navbar starts */
 
 #navbar {
@@ -121,6 +129,126 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* Index */
+/* Menu */
+#menus {
+  background-color: red;
+  text-align: center;
+  padding: 50px;
+  margin-top: 50px;
+}
+#menus h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+#menus p {
+  font-size: 1em;
+  color: rgb(61, 60, 60);
+}
+#menus .menu-container {
+  width: 540px;
+  height: 280px;
+  background-color: yellow;
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  padding: 40px;
+  border-radius: 40px;
+  text-align: left;
+}
+#menus .menu-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  right: 40px;
+  border-radius: 20px;
+}
+#menus .menu-detail {
+  position: absolute;
+  width: 240px;
+}
+#menus .video-container {
+  margin-top: 50px;
+}
+#main-footer {
+  background-color: red;
+  padding: 30px;
+  color: white;
+}
+
+/* Locations */
+#locations {
+  background-color: yellow;
+  padding: 50px;
+}
+#locations .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#locations .info-content {
+  margin-right: 100px;
+}
+#locations .info-content h2 {
+  font-size: 2em;
+}
+/* button styling */
+#locations .info-content .btn {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  display: inline-block;
+  padding: 20px 35px;
+  margin-top: 30px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+#locations .info-content .btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+/* hide arrow at first */
+#locations .info-content .btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+/* when hover the button, show arrow */
+#locations .info-content .btn:hover span {
+  padding-right: 25px;
+}
+#locations .info-content .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#locations img {
+  border-radius: 20px;
+}
+/* addresses */
+#locations .flex-container.align {
+  justify-content: space-around;
+}
+#locations .box {
+  background-color: #fff;
+  margin: 50px 10px 0;
+  padding: 30px 50px;
+  border-radius: 30px;
+  text-align: center;
+}
+#locations .box i {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
 
 /* About Us */
 /* History */
