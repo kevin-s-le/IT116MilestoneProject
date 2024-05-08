@@ -4,92 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" contnet="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant Website</title>
-    <script
-      src="https://kit.fontawesome.com/ac6ef5f153.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Feline Feast</title>
     <link rel="stylesheet" href="code/main.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gochi+Hand&display=swap" rel="stylesheet">
   <body>
     <header>
       <nav id="navbar">
-        <div class="container">
-          <h1 class="logo"><a href="index.html">Logo/Name</a></h1>
+        <div class="nav">
           <ul>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="events.html">Events & Happy Hour</a></li>
-            <li><a href="photo gallery.html">Photo Gallery</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="order.html">Order Now</a></li>
+            <li><a href="index.html"class="navlink">Home</a></li>
+            <li><a href="menu.html"class="navlink">Menu</a></li>
+            <li><a href="index.html"><img src="media/Logo.png" class="logo" alt="Logo"></a></li>
+            <li><a href="reviews.html"class="navlink">Reviews</a></li>
+            <li><a href="about.html"class="navlink">About</a></li>
           </ul>
         </div>
       </nav>
-      <div id="showcase">
-        <div class="container">
-          <div class="showcase-content">
-            <h1><span class="text-primary">Welcome to Restaurantly</span></h1>
-            <p>Delivering great food for more than 18 years</p>
-            <a class="btn" href="Menu.html">Take a look at Our Menu</a>
-          </div>
-        </div>
-      </div>
     </header>
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-    <section id="features">
-      <div class="container">
-        <h2>Today's Menu</h2>
-        <div class="container">
-          <h3>Food 1</h3>
-          <p>Food description goes here</p>
-        </div>
-        <div class="container">
-          <h3>Food 2</h3>
-          <p>Food Description goes here</p>
-        </div>
-        <div class="video-container">
-          <video id="brandVideo" width="640" height="360" controls>
-            <source src="media/brandvideo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">Welcome to Feline Feast!</div>
+    <img src="media/banner1.jpg" style="width:100%">
+    <div class="text">Fresh Ingredients</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">Welcome to Feline Feast!</div>
+    <img src="media/banner2.jpg" style="width:100%">
+    <div class="text">Relaxing Atmosphere</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">Welcome to Feline Feast!</div>
+    <img src="media/banner3.jpg" style="width:100%">
+    <div class="text">Delicious Food</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<!-- Menus -->
+<section id="menus">
+  <div class="container">
+    <h2>Today's Menus</h2>
+    <div class="menu-container">
+      <div class="menu-detail">
+        <h3>Kawaii Kitty Sushi Delights</h3>
+       <p>Imagine a <i>purr-fect</i> fusion of culinary artistry and feline charm! Picture delicate mounds of fluffy, vinegared sushi rice, lovingly shaped into the likeness of playful cats, each with their own distinct personality.</p>
+      </div>
+      <img src="media/sushi.png" alt="special lunch menu">
+    </div>
+    <div class="menu-container">
+      <div class="menu-detail">
+        <h3>Cheese & Crackers Mouse Munchies</h3>
+        <p>Get ready to nibble on the cutest snack this side of the cheese wheel! Introducing Cheese & Crackers Mouse Munchies, where every bite is an adorable adventure into the world of whimsical culinary creativity. </p>
+      </div>
+      <img src="media/cheese.png" alt="special dinner menu">
+    </div>
+      <div class="video-container">
+        <video id="brandVideo" width="640" height="360" controls>
+          <source src="media/brandvideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       </div>
     </section>
-    <section id="features">
-      <div class="info-content">
-        <h2>Convenient Locations</h2>
-        <p>
-          We have the pleasure of serving customers at our convenient locations
-          in Seattle.
-        </p>
-        <a class="btn" href="locations.html">Visit Us</a>
+    <!-- Locations -->
+    <section id="locations">
+      <div class="flex-container">
+        <div class="info-content">
+          <h2>Convenient Locations</h2>
+          <p>
+            We have the pleasure of serving customers at our convenient locations
+            in Seattle.
+          </p>
+          <a class="btn" href="locations.html"><span>Visit Us</span></a>
+        </div>
+        <img src="media/exterior.jpg" alt="restaurant exterior">
       </div>
-      <div class="info-img"></div>
-      <div class="box">
-        <i class="fa-solid fa-location-dot fa-2x"></i>
-        <h3>North Seattle</h3>
-        <p>9600 College Way N. Seattle, WA 98103</p>
-        <p>Mon - Sat 9am - 6pm</p>
-      </div>
-      <div class="box">
-        <i class="fa-solid fa-location-dot fa-2x"></i>
-        <h3>Capitol Hill</h3>
-        <p>1701 Broadway, Seattle, WA 98122</p>
-        <p>Mon - Sat 9am - 6pm</p>
-      </div>
-      <div class="box">
-        <i class="fa-solid fa-location-dot fa-2x"></i>
-        <h3>South Seattle</h3>
-        <p>6000 16th Ave. SW Seattle, WA 98106</p>
-        <p>Mon - Sat 9am - 6pm</p>
+      <div class="flex-container align">
+        <div class="box">
+          <i class="fa-solid fa-location-dot fa-2x"></i>
+          <h3>North Seattle</h3>
+          <p>9600 College Way N. Seattle, WA 98103</p>
+          <p>Mon - Sat 9am - 6pm</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-location-dot fa-2x"></i>
+          <h3>Capitol Hill</h3>
+          <p>1701 Broadway, Seattle, WA 98122</p>
+          <p>Mon - Sat 9am - 6pm</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-location-dot fa-2x"></i>
+          <h3>South Seattle</h3>
+          <p>6000 16th Ave. SW Seattle, WA 98106</p>
+          <p>Mon - Sat 9am - 6pm</p>
+        </div>
       </div>
     </section>
     <footer id="main-footer">
       <p>Restaurantly &copy; 2024, All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
-  </body>
+    <script src="code/script.js">
+            src="https://kit.fontawesome.com/ac6ef5f153.js"
+            crossorigin="anonymous"
+    </script>
+</body>
 </html>
