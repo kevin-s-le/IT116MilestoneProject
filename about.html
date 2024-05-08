@@ -5,31 +5,30 @@
     <meta http-equiv="X-UA-Compatible" contnet="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <script
-      src="https://kit.fontawesome.com/ac6ef5f153.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="code/main.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gochi+Hand&display=swap" rel="stylesheet">
   <body>
     <header>
       <nav id="navbar">
-        <div class="container">
-          <h1 class="logo"><a href="index.html">Logo/Name</a></h1>
+        <div class="nav">
           <ul>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="events.html">Events & Happy Hour</a></li>
-            <li><a href="photo gallery.html">Photo Gallery</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="order.html">Order Now</a></li>
+            <li><a href="index.html"class="navlink">Home</a></li>
+            <li><a href="menu.html"class="navlink">Menu</a></li>
+            <li><a href="index.html"><img src="media/Logo.png" class="logo" alt="Logo"></a></li>
+            <li><a href="reviews.html"class="navlink">Reviews</a></li>
+            <li><a href="about.html"class="navlink">About</a></li>
           </ul>
         </div>
       </nav>
     </header>
+  
+  
     <main>
+      <section id="hero">
+          <img src="media/about_hero.jpeg" alt="inside of the restaurant">
+      </section>
       <!-- Mission statement starts here -->
       <section class="mission-section">
         <h2>Our Mission</h2>
@@ -41,31 +40,33 @@
         <image src="media/interior-restaurant-design.jpg" alt="Restaurant Interior Design" width="500" height="300">
       </section>    
             <!--Awards-->
-      <section id="awards received">
+      <section id="awards-section">
         <h2>Awards</h2>
-        <div class="award">
-          <i class="fa-solid fa-award"></i>
-          <p>"Earth's Best Restaurant of 2023"</p>
-          <p>-Earth's Top 10 Restaurants</p>
-        </div>
-        <div class="award">
-          <i class="fa-solid fa-award"></i>
-          <p>"Milky Way's Most Outstanding Restaurant of 2023"</p>
-          <p>-Milky Way's 50 Best Restaurants</p>
-        </div>
-        <div class="award">
-          <i class="fa-solid fa-award"></i>
-          <p>"Best Cat Owned Restaurant of 2024"</p>
-          <p>-Cat's Choice Awards</p>
-        </div>
-        <div class="award">
-          <i class="fa-solid fa-award"></i>
-          <p>"Best Restaurant of All Time"</p>
-          <p>-Everyone</p>
+        <div class="flex-container">
+          <div class="award">
+            <i class="fa-solid fa-award"></i>
+            <p>"Earth's Best Restaurant of 2023"</p>
+            <p>-Earth's Top 10 Restaurants</p>
+          </div>
+          <div class="award">
+            <i class="fa-solid fa-award"></i>
+            <p>"Milky Way's Most Outstanding Restaurant of 2023"</p>
+            <p>-Milky Way's 50 Best Restaurants</p>
+          </div>
+          <div class="award">
+            <i class="fa-solid fa-award"></i>
+            <p>"Best Cat Owned Restaurant of 2024"</p>
+            <p>-Cat's Choice Awards</p>
+          </div>
+          <div class="award">
+            <i class="fa-solid fa-award"></i>
+            <p>"Best Restaurant of All Time"</p>
+            <p>-Everyone</p>
+          </div>
         </div>
       </section>
       <!-- History Part -->
-      <section>
+      <section id="history-section">
         <h2>Our History</h2>
         <table id="history">
           <tr>
@@ -138,5 +139,9 @@
     <footer id="main-footer">
       <p>Restaurantly &copy; 2024, All Rights Reserved.</p>
       </footer>
+      <script>
+        src="https://kit.fontawesome.com/ac6ef5f153.js"
+        crossorigin="anonymous"
+      </script>
   </body>
 </html>
