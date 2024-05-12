@@ -408,10 +408,14 @@ body {
 /* End of menu */
 
 /* Review Page */
-#ave-rating {
- padding: 2.5em;
+/* Section Layout */
+.center {
+  margin: 2.5em auto;
+  text-align: center;
+  width: 80%;
 }
 
+/* Average rating */
 #ave-rating h2 {
   font-size: 1.5em;
   margin-bottom: 0.5em;
@@ -440,11 +444,15 @@ body {
   display: flex;
 }
 
+.flex-container {
+  justify-content: center;
+}
+
 /* Rating bar */ 
 .row {
   margin-left: 3em;
   margin-top: 1em;
-  width: 30em;
+  width: 60%;
 }
 
 /* Three column layout */
@@ -529,6 +537,12 @@ body {
   cursor: pointer; 
   margin-left: 2.5em;
 }
+#popupBtn:hover {
+  background-color: #ec803d;
+}
+#popupBtn:active {
+  background-color: #da6014;
+}
 #overlay {
   display: none;
   position: fixed;
@@ -550,6 +564,65 @@ body {
   z-index: 102; /* Position the popup above the overlay */
 }
 
+/* Review list */
+hr.line {
+  border: 1px solid #e7e6e5;
+  width: 80%;
+}
+
+#reviews {
+  max-width: 1400px;
+  text-align: left;
+}
+
+#reviews .name {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-size: 1.1em;
+}
+
+#reviews .stars {
+  display: inline;
+  font-size: .8em;
+}
+
+#reviews .date {
+  color: #a09f9d;
+  font-size: .9em;
+  margin-top: 0;
+}
+
+#reviews .comment {
+  color: #3d3c3c;
+  margin-bottom: 70px;
+}
+
+.number {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.number a {
+  text-decoration: none;
+  background-color: #174041;
+  color: #ffffff;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.number a:hover {
+  background-color: #2d595a;
+}
+
+.number a.active {
+  background-color: #eb7228;
+}
+
+.number a.active:hover {
+  background-color: #ec803d;
+}
 
 /* Responsive Reveiw layout - make the columns stack on top of each other instead of next to each other */
 @media (max-width: 768px) {
@@ -562,6 +635,9 @@ body {
   }
   .side, .middle {
     width: 100%;
+  }
+  .side > div {
+    text-align: left;
   }
   /* Hide the right column on small screens */
   .right {
