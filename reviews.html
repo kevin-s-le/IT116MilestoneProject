@@ -6,33 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reviews</title>
     <link rel="stylesheet" href="code/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gochi+Hand&display=swap" rel="stylesheet">
-  <script
-    src="https://kit.fontawesome.com/ac6ef5f153.js"
-    crossorigin="anonymous">
-  </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ac6ef5f153.js"
+      crossorigin="anonymous">
+    </script>
   </head>
   <body>
     <header>
       <nav id="navbar">
         <div class="nav">
           <ul>
-            <li><a href="index.html"class="navlink">Home</a></li>
-            <li><a href="menu.html"class="navlink">Menu</a></li>
-            <li><a href="index.html"><img src="media/Logo.png" class="logo" alt="Logo"></a></li>
-            <li><a href="reviews.html"class="navlink">Reviews</a></li>
-            <li><a href="about.html"class="navlink">About</a></li>
+            <li><a href="index.html" class="navlink">Home</a></li>
+            <li><a href="menu.html" class="navlink">Menu</a></li>
+            <li>
+              <a href="index.html">
+                <img src="media/Logo.png" class="logo" alt="Logo" />
+              </a>
+            </li>
+            <li><a href="reviews.html" class="navlink">Reviews</a></li>
+            <li><a href="about.html" class="navlink">About</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <img src="media/review_hero.jpeg" alt="Cats playing with flour">
+        <img src="media/review_hero.jpeg" alt="Cats playing with flour" />
       </section>
-      <section class="flex-container" id="ave-rating">
+      <section class="flex-container center" id="ave-rating">
         <div class="box" id="overall-rating">
           <h2>Overall Rating</h2>
           <b>4.0</b>
@@ -103,14 +110,139 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="center">
         <button id="popupBtn">Write a review</button>
         <div id="overlay"></div>
         <div id="popup">
-          <form action="">This is a form area.
+          <form action="">
+            This is a form area.
             <button id="closeBtn">Cancel</button>
           </form>
         </div>
+      </section>
+      <hr class="line">
+      <section class="center" id="reviews">
+        <article class="review">
+          <p class="name">Samantha Miller</p>
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="date">May 12, 2024</p>
+          <p class="comment">
+            My recent visit to Feline Feast was an absolute delight! From the
+            moment we stepped in, we were greeted warmly by the staff. The
+            ambiance was elegant yet cozy, perfect for a romantic dinner. Each
+            dish we ordered was a masterpiece - the flavors were exquisite and
+            the presentation was impeccable. I highly recommend trying their
+            signature dish, the truffle risotto, it was heavenly! The service
+            was top-notch, attentive without being intrusive. Overall, Feline
+            Feast exceeded my expectations, and I can't wait to return!
+          </p>
+        </article>
+        <article class="review">
+          <p class="name">Michael Johnson</p>
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p class="date">May 11, 2024</p>
+          <p class="comment">
+            Feline Feast has become our go-to spot for family dinners. The
+            restaurant has a welcoming atmosphere with friendly staff who always
+            make us feel at home. Their menu offers a wide variety of dishes,
+            catering to everyone's taste buds. The food is freshly made with
+            quality ingredients. What I love most is their attention to detail -
+            they even have a separate kids' menu with smaller portions and fun
+            activities to keep the little ones entertained. Feline Feast is the
+            perfect place for a casual family meal!
+          </p>
+        </article>
+        <article class="review">
+          <p class="name">Emily Rodriguez</p>
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="date">May 10, 2024</p>
+          <p class="comment">
+            Feline Feast is my favorite spot for a lazy Sunday brunch. The
+            moment you walk in, you're enveloped in the cozy ambiance with the
+            smell of freshly brewed coffee lingering in the air. Their menu
+            offers a delightful selection of breakfast classics, from fluffy
+            pancakes to hearty omelets. I particularly enjoy their avocado
+            toast, topped with perfectly ripe avocados and a sprinkle of chili
+            flakes for an extra kick. The staff is always friendly and
+            accommodating, making sure you have everything you need for a
+            relaxing meal. Whether you're catching up with friends or enjoying a
+            solo brunch, Feline Feast is the perfect spot to start your day.
+          </p>
+        </article>
+        <article class="review">
+          <p class="name">Daniel Garcia</p>
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p class="date">May 9, 2024</p>
+          <p class="comment">
+            Feline Feast is a hidden gem for authentic Mexican cuisine. As soon
+            as you step inside, you're greeted with vibrant colors and the
+            enticing aroma of spices. The menu features traditional Mexican
+            dishes made with fresh, locally sourced ingredients. I highly
+            recommend trying their carne asada tacos - the meat is tender and
+            flavorful, perfectly complemented by the homemade salsa. The
+            margaritas are also a must-try, made with fresh-squeezed lime juice
+            and top-shelf tequila. The staff is incredibly friendly and
+            knowledgeable, always happy to recommend their favorite dishes. If
+            you're craving authentic Mexican flavors, Feline Feast is the place
+            to be!
+          </p>
+        </article>
+        <article class="review">
+          <p class="name">Olivia Turner</p>
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="date">May 8, 2024</p>
+          <p class="comment">
+            Feline Feast offers a unique dining experience with breathtaking
+            views of the ocean. Whether you choose to dine indoors or on the
+            spacious outdoor patio, you're guaranteed stunning vistas of the
+            sunset over the water. The menu features a variety of dishes, all
+            prepared with a creative twist. I particularly enjoyed their seafood
+            platter, which included a selection of fresh oysters, shrimp
+            cocktail, and crab cakes. The atmosphere is relaxed and laid-back,
+            perfect for a casual meal with friends or a romantic date night.
+            Feline Feast combines delicious food with unforgettable views,
+            making it a must-visit destination for any food lover.
+          </p>
+        </article>
+        <ul class="number">
+          <li><a href="#">&lt;</a></li>
+          <li><a href="#" class="active">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">&gt;</a></li>
+        </ul>
       </section>
     </main>
     <footer id="main-footer">
