@@ -362,3 +362,86 @@ body {
   font-family: "Gochi Hand";
   font-size: 20px;
 }
+
+/* Menu Page */
+
+/* Chef Image */
+#chef {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative; /* Set the position of the parent element */
+  display: inline-block; /* Set as an inline block element */
+}
+#chef::before {
+  content: ""; /* Add content to the pseudo-element */
+  position: absolute; /* Set to absolute position */
+  top: 0;
+  left: 0;
+  width: 100%; /* Fill the parent element's width */
+  height: 100%; /* Fill the parent element's height */
+}
+#chef img {
+  object-fit: cover;
+  display: block; /* Reset default image properties */
+  width: 100%; /* Make the image fill the width of the parent element */
+  height: auto; /* Maintain aspect ratio of the image */
+  z-index: 2; /* Position the image above the background */
+}
+
+/* Menu items */
+.menu {
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+    background-color: ;
+  }
+  h2 {
+    color: #eb7228;
+    margin-left: 30px;
+  }
+  .box1{
+    width: cacl(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #e8d0b3;
+    position: relative;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .box2{
+    width: cacl(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #174041;
+    position: relative;
+    margin-right: 30px;
+    margin-left: 30px;
+    
+    h3{
+      color:#e8d0b3;
+    }
+  }
+  img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    }
+}
+
+@media screen nad (max-width: 768px){
+  .menu{
+    flex-direction: column;
+  }
+  .box{
+    width: 100%;
+  }
+}
+/* End of menu */
