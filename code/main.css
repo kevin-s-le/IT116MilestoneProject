@@ -272,32 +272,18 @@ p {
 
 
 /* About Us */
-/* Hero Image */
-#hero {
+/* Hero image can be used every pages */
+.hero {
   width: 100%;
-  height: 500px;
+  height: 45vh;
   overflow: hidden;
   display: flex;
-  align-items: center;
-  position: relative; /* Set the position of the parent element */
-  display: inline-block; /* Set as an inline block element */
 }
-#hero::before {
-  content: ""; /* Add content to the pseudo-element */
-  position: absolute; /* Set to absolute position */
-  top: 0;
-  left: 0;
-  width: 100%; /* Fill the parent element's width */
-  height: 100%; /* Fill the parent element's height */
-  background-color: rgba(0,0,0,0.5); /* Set a semi-transparent black background (0.5 is the opacity) */
-  z-index: 1; /* Place it above the image */
-}
-#hero img {
+.hero img {
   object-fit: cover;
-  display: block; /* Reset default image properties */
   width: 100%; /* Make the image fill the width of the parent element */
   height: auto; /* Maintain aspect ratio of the image */
-  z-index: 2; /* Position the image above the background */
+  justify-content: center;
 }
 
 /* Mission Satements */
@@ -365,31 +351,7 @@ body {
 
 /* Menu Page */
 
-/* Chef Image */
-#chef {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  position: relative; /* Set the position of the parent element */
-  display: inline-block; /* Set as an inline block element */
-}
-#chef::before {
-  content: ""; /* Add content to the pseudo-element */
-  position: absolute; /* Set to absolute position */
-  top: 0;
-  left: 0;
-  width: 100%; /* Fill the parent element's width */
-  height: 100%; /* Fill the parent element's height */
-}
-#chef img {
-  object-fit: cover;
-  display: block; /* Reset default image properties */
-  width: 100%; /* Make the image fill the width of the parent element */
-  height: auto; /* Maintain aspect ratio of the image */
-  z-index: 2; /* Position the image above the background */
-}
+/* Chef Image style is the same as the About page's hero image.*/
 
 /* Menu items */
 .menu {
