@@ -155,7 +155,7 @@ p {
 #menus {
   background-color: #174041;
   text-align: center;
-  padding: 50px;
+  padding: 2.5em;
   margin-top: 50px;
 }
 #menus h2 {
@@ -165,33 +165,36 @@ p {
   margin-bottom: 30px;
   color: #e8d0b3;
 }
-#menus p {
-  font-size: 1em;
-  color: rgb(61, 60, 60);
-  text-align: center;
+#menus .container {
+  display: flex;
+  justify-content: center;
 }
 #menus .menu-container {
-  width: 540px;
-  height: 280px;
+  display: flex;
+  width: 50%;
+  max-width: 650px;
   background-color: #e8d0b3;
-  position: relative;
-  display: inline-block;
-  margin-right: 30px;
   padding: 40px;
   border-radius: 40px;
-  text-align: center;
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-#menus .menu-container img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  position: absolute;
-  right: 40px;
-  border-radius: 20px;
+#menus .menu-container:first-child {
+  margin-right: 50px;
+}
+#menus p {
+  color: rgb(61, 60, 60);
+  margin-bottom: 0;
 }
 #menus .menu-detail {
-  position: absolute;
-  width: 240px;
+  width: 50%;
+}
+#menus .menu-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 #menus .video-container {
   margin-top: 50px;
@@ -273,6 +276,29 @@ p {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1309px){
+  #menus .menu-detail {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #menus .menu-container img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #menus .container {
+    flex-direction: column;
+  }
+  #menus .menu-container {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #menus .menu-container img {
+    width: 100%;
+  }
+}
+
 
 /* About Us */
 /* Hero image can be used every pages */
@@ -292,29 +318,14 @@ p {
 /* Mission Satements */
 .mission-section {
   text-align: center;
-  margin: 2.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.mission-section p {
-  max-width: 1300px;
-  margin: 1.5em auto;
-}
-
-.mission-section img {
-  display: block;
-  width: 50%;
-  max-width: 700px;
-  min-width: 500px;
-  margin: auto;
+  margin: 50px auto;
 }
 
 /* Awards */
 #awards-section {
   background-color: #e8d0b3;
-  padding: 2.5em;
+  height: 350px;
+  padding: 30px;
 }
 #awards-section h2 {
   text-align: center;
@@ -327,86 +338,45 @@ p {
 .award {
   background-color: #fff;
   width: 300px;
+  height: 200px;
   margin: 0 10px;
   border-radius: 20px;
-  padding: 15px 30px 30px;
+  padding-top: 30px;
   text-align: center;
-  box-sizing: content-box;
-}
-
-.award i {
-  color: #ffffff;
-  font-size: 1.5em;
-}
-
-.award i::before {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  background-color: #ec803d;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
 }
 
 
 /* History */
 #history-section h2 {
-  margin: 50px auto;
   text-align: center;
+  padding: 50px;
+}
+#history {
+  width: 800px;
+  margin: 0 auto;
 }
 
-#history {
-  width: 70%;
-  max-width: 1300px;
-  margin: 50px auto;
+#history, th, td {
+  border: 1px solid lightgray;
   border-collapse: collapse;
 }
 
-#history tr {
-  border-bottom: 1px solid #a09f9d;
-  display: block;
-  padding: 30px;
+th, td {
+  padding: 15px;
 }
 
-#history tr:last-child {
-  border: none;
+#history td:nth-child(odd) {
+  width: 150px;
 }
 
-#history th {
-  text-align: left;
-  vertical-align: top;
-  width: 25%;
-  color: #a09f9d;
-  padding-right: 15px;
-}
-
-#history th em {
-  font-style: normal;
-  color: #743c08;
+.highlight {
+  background-color: #eb7228;
 }
 
 body {
   font-family: "Gochi Hand";
   font-size: 20px;
 }
-
-@media screen and (max-width: 768px){
-  .award {
-    margin-bottom: 30px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .mission-section img {
-    width: 100%;
-    min-width: none;
-  }
-  #history {
-    width: 100%;
-  }
-}
-
-/* End of About */
 
 /* Menu Page */
 
