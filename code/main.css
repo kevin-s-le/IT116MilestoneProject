@@ -160,6 +160,8 @@ p {
 }
 #menus h2 {
   font-size: 2em;
+  text-shadow: 4px 4px 4px #0c0000;
+  text-align: center;
   margin-bottom: 30px;
   color: #e8d0b3;
 }
