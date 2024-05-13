@@ -62,6 +62,7 @@ h2, h3 {
 
 /* Slideshow container */
 .slideshow-container {
+  position: relative;
   margin: auto;
 }
 
