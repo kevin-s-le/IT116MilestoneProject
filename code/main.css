@@ -402,8 +402,6 @@ body {
     position: relative;
     margin-right: 30px;
     margin-left: 30px;
-    display: flex;
-    jusitfy-content: space-between;
   }
   
   .box2{
