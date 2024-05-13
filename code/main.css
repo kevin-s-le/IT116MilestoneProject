@@ -466,6 +466,9 @@ body {
     position: relative;
     margin-right: 30px;
     margin-left: 30px;
+    h3{
+      color:#174041;
+    }
   }
   
   .box2{
@@ -478,9 +481,9 @@ body {
     position: relative;
     margin-right: 30px;
     margin-left: 30px;
-  }
+  
     h3{
-      color:#174041;
+      color:#e8d0b3;
     }
   }
   img{
