@@ -318,14 +318,29 @@ p {
 /* Mission Satements */
 .mission-section {
   text-align: center;
-  margin: 50px auto;
+  margin: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mission-section p {
+  max-width: 1300px;
+  margin: 1.5em auto;
+}
+
+.mission-section img {
+  display: block;
+  width: 50%;
+  max-width: 700px;
+  min-width: 500px;
+  margin: auto;
 }
 
 /* Awards */
 #awards-section {
   background-color: #e8d0b3;
-  height: 350px;
-  padding: 30px;
+  padding: 2.5em;
 }
 #awards-section h2 {
   text-align: center;
@@ -341,42 +356,84 @@ p {
   height: 200px;
   margin: 0 10px;
   border-radius: 20px;
-  padding-top: 30px;
+  padding: 15px 30px 30px;
   text-align: center;
+  box-sizing: content-box;
+}
+
+.award i {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.award i::before {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #ec803d;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 
 /* History */
 #history-section h2 {
+  margin: 50px auto;
   text-align: center;
-  padding: 50px;
 }
 #history {
-  width: 800px;
-  margin: 0 auto;
-}
-
-#history, th, td {
-  border: 1px solid lightgray;
+  width: 70%;
+  max-width: 1300px;
+  margin: 50px auto;
   border-collapse: collapse;
 }
 
-th, td {
-  padding: 15px;
+#history tr {
+  border-bottom: 1px solid #a09f9d;
+  display: block;
+  padding: 30px;
 }
 
-#history td:nth-child(odd) {
-  width: 150px;
+#history tr:last-child {
+  border: none;
 }
 
-.highlight {
-  background-color: #eb7228;
+#history th {
+  text-align: left;
+  vertical-align: top;
+  width: 25%;
+  color: #a09f9d;
+  padding-right: 15px;
+}
+
+#history th em {
+  font-style: normal;
+  color: #743c08;
 }
 
 body {
   font-family: "Gochi Hand";
   font-size: 20px;
 }
+
+@media screen and (max-width: 768px){
+  .award {
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mission-section img {
+    width: 100%;
+    min-width: none;
+  }
+  #history {
+    width: 100%;
+  }
+}
+
+/* End of About */
+
 
 /* Menu Page */
 
@@ -427,7 +484,7 @@ body {
     }
   menu.p {
     text-align: left
-}
+}}
 
 @media screen and (max-width: 768px){
   .menu{
