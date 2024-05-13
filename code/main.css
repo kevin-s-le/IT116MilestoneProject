@@ -454,6 +454,8 @@ body {
     border-radius: 20px;
     object-fit: cover;
     }
+  menu.p {
+    text-align: left
 }
 
 @media screen and (max-width: 768px){
