@@ -398,6 +398,9 @@ body {
     width: 100%;
     min-width: none;
   }
+  #history {
+    width: 100%;
+  }
 }
 
 /* End of About */
