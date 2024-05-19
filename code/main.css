@@ -137,6 +137,7 @@ h2, h3 {
 body {
   background-color: #fff;
   font-family: "Gochi Hand";
+  font-size: 20px;
 }
 h2 {
   font-size: 2em;
@@ -418,11 +419,6 @@ p {
 #history th em {
   font-style: normal;
   color: #743c08;
-}
-
-body {
-  font-family: "Gochi Hand";
-  font-size: 20px;
 }
 
 @media screen and (max-width: 768px){
@@ -782,7 +778,7 @@ hr.line {
 /* End of Review */
 
 /* Event Page */
-.evnet_hero {
+.event_hero {
   background-image: url("../media/event_hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -793,7 +789,7 @@ hr.line {
   text-align: center;
   position: relative;
 }
-.evnet_hero .overlay {
+.event_hero .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
@@ -804,33 +800,49 @@ hr.line {
   align-items: center;
   justify-content: center;
 }
-.evnet_hero .hero-content {
+.event_hero .hero-content {
   color: #ffffff;
   align-items: center;
 }
-.evnet_hero .hero-content p:first-child {
+.event_hero .hero-content p:first-child {
   color: #1d9230;
   font-size: 2em;
   margin: 0;
 }
-.evnet_hero .hero-content h1 {
+.event_hero .hero-content h1 {
   font-size: 4em;
   margin: 0;
 }
-.evnet_hero .hero-content p.description {
+.event_hero .hero-content p.description {
   color: #ffffff;
   width: 60%;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-.evnet_hero #countdown span {
+.event_hero #countdown span {
   color: #ec803d;
   font-size: 5em;
   vertical-align: middle;
 }
-.evnet_hero #countdown-text span {
+.event_hero #countdown-text span {
   margin-right: 73px;
 }
-.evnet_hero #countdown-text span:last-child {
+.event_hero #countdown-text span:last-child {
   margin: 0;
+}
+#confettiBtn {
+  margin-top: 50px;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Gochi Hand";
+  cursor: pointer;
+  border: none;
+  background-color: #ec803d;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+#confettiBtn:hover {
+  background-color: #df6f2a;
 }

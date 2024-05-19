@@ -36,3 +36,12 @@ function startCountdown() {
 
 // Call startCountdown initially to start the countdown immediately
 startCountdown();
+
+// Function to click button to create confetti
+document.getElementById('confettiBtn').addEventListener('click', () => {
+    confetti({
+      particleCount: 200,
+      spread: 120,
+      origin: { y: 0.7 }
+    });
+  });
