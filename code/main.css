@@ -780,3 +780,57 @@ hr.line {
   }
 }
 /* End of Review */
+
+/* Event Page */
+.evnet_hero {
+  background-image: url("../media/event_hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.evnet_hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.evnet_hero .hero-content {
+  color: #ffffff;
+  align-items: center;
+}
+.evnet_hero .hero-content p:first-child {
+  color: #1d9230;
+  font-size: 2em;
+  margin: 0;
+}
+.evnet_hero .hero-content h1 {
+  font-size: 4em;
+  margin: 0;
+}
+.evnet_hero .hero-content p.description {
+  color: #ffffff;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.evnet_hero #countdown span {
+  color: #ec803d;
+  font-size: 5em;
+  vertical-align: middle;
+}
+.evnet_hero #countdown-text span {
+  margin-right: 73px;
+}
+.evnet_hero #countdown-text span:last-child {
+  margin: 0;
+}
