@@ -846,3 +846,42 @@ hr.line {
 #confettiBtn:hover {
   background-color: #df6f2a;
 }
+/* Events What to expect */
+#events-section {
+  background-color: #e8d0b3;
+  padding: 2.5em;
+}
+#events-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#events-section .flex-container {
+  display: flex;
+  justify-content: center;
+}
+.events {
+  background-color: #fff;
+  width: 300px;
+  height: 200px;
+  margin: 0 10px;
+  border-radius: 20px;
+  padding: 15px 30px 30px;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+.events i {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.events i::before {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #2d595a;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
