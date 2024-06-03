@@ -1,3 +1,35 @@
+// Create a Javascript fallback if both CSS fade-in animation and fade-in transitions are not supported.
+document.addEventListener("DOMContentLoaded", function() {
+  // Check for CSS animation and transition support
+  if (Modernizr.cssanimations) {
+    // Use CSS animations
+    document.querySelector('.hero-content').classList.add('fade-in');
+  } else if (Modernizr.csstransitions) {
+    // Use CSS transitions
+    var element = document.querySelector('.hero-content');
+    element.classList.add('transition-fade');
+    setTimeout(function() {
+      element.classList.add('transition-fade-in');
+    }, 10); // Adding a slight delay to trigger the transition
+  } else {
+    // Use JavaScript fallback
+    var element = document.querySelector('.hero-content');
+    element.style.opacity = 0;
+    var fadeIn = function() {
+      var op = 0; // Initial opacity
+      var timer = setInterval(function() {
+        if (op >= 1) {
+          clearInterval(timer);
+        }
+        element.style.opacity = op;
+        op += 0.1; // Change as needed
+      }, 200); // Duration per step
+    };
+    fadeIn();
+  }
+});
+
+
 let countdown;
 const endDate = new Date("June 14, 2024 00:00:00").getTime(); // Set the end date to June 14th, 2024
 

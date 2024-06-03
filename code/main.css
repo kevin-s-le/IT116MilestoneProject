@@ -610,30 +610,55 @@ p {
   height: 15px; 
   background-color: #fccb2b; 
   border-radius: 9px;
+  animation: moving-bar5 2s ease;
+}
+@keyframes moving-bar5 {
+  0% { width: 0;}
+  100% { width: 75%;}
 }
 .bar-4 {
   width: 50%; 
   height: 15px; 
   background-color: #fccb2b; 
   border-radius: 9px;
+  animation: moving-bar4 2s ease;
+}
+@keyframes moving-bar4 {
+  0% { width: 0;}
+  100% { width: 50%;}
 }
 .bar-3 {
   width: 35%; 
   height: 15px; 
   background-color: #fccb2b;
   border-radius: 9px;
+  animation: moving-bar3 2s ease;
+}
+@keyframes moving-bar3 {
+  0% { width: 0;}
+  100% { width: 35%;}
 }
 .bar-2 {
   width: 5%; 
   height: 15px; 
   background-color: #fccb2b;
   border-radius: 9px;
+  animation: moving-bar2 2s ease;
+}
+@keyframes moving-bar2 {
+  0% { width: 0;}
+  100% { width: 5%;}
 }
 .bar-1 {
   width: 13%; 
   height: 15px; 
   background-color: #fccb2b;
   border-radius: 9px;
+  animation: moving-bar1 2s ease;
+}
+@keyframes moving-bar1 {
+  0% { width: 0;}
+  100% { width: 13%;}
 }
 
 /* Review form */
@@ -860,6 +885,21 @@ hr.line {
 }
 #confettiBtn:hover {
   background-color: #df6f2a;
+}
+/* fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+.transition-fade {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.transition-fade-in {
+  opacity: 1;
 }
 /* Events What to expect */
 #events-section {
