@@ -886,6 +886,21 @@ hr.line {
 #confettiBtn:hover {
   background-color: #df6f2a;
 }
+/* fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+.transition-fade {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.transition-fade-in {
+  opacity: 1;
+}
 /* Events What to expect */
 #events-section {
   background-color: #e8d0b3;
