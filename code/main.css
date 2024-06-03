@@ -1016,40 +1016,39 @@ hr.line {
 
 
 /* Contact Us Social Media Buttons */
-.fa {
+#contact-us .fa {
   padding: 25px;
-  font-size: 50px;
   text-align: center;
   text-decoration: none;
   margin: 20px 2px;
   border-radius: 50%;
 }
 
-.fa:hover {
+#contact-us .fa:hover {
     opacity: 0.7;
 }
 
-.fa-facebook {
+#contact-us .fa-facebook {
   background: #174041;
   color: white;
 }
 
-.fa-twitter {
+#contact-us .fa-twitter {
   background: #174041;
   color: white;
 }
 
-.fa-google {
+#contact-us .fa-google {
   background: #174041;
   color: white;
 }
 
-.fa-youtube {
+#contact-us .fa-youtube {
   background: #174041;
   color: white;
 }
 
-.fa-instagram {
+#contact-us .fa-instagram {
   background: #174041;
   color: white;
 }
