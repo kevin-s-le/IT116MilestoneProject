@@ -230,38 +230,53 @@ p {
 #locations .info-content h2 {
   font-size: 2em;
 }
+/* Modal Map */
+#mapOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 101; /* Position the overlay above the navbar */
+}
+#mapContainer {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5);
+  z-index: 102; /* Position the popup above the overlay */
+}
+#closeMap {
+  font-family: "Gochi Hand";
+  font-size: 1em;
+  background-color: #e3e3e3;
+  color: #174041;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
 /* button styling */
 #locations .info-content .btn {
-  text-decoration: none;
+  font-family: "Gochi Hand";
+  font-size: 1em;
   background-color: #174041;
   color: #fff;
-  display: inline-block;
   padding: 20px 35px;
   margin-top: 30px;
+  border-style: none;
   border-radius: 10px;
-  transition: all 0.5s;
+  cursor: pointer;
 }
-#locations .info-content .btn span {
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-/* hide arrow at first */
-#locations .info-content .btn span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-/* when hover the button, show arrow */
-#locations .info-content .btn:hover span {
-  padding-right: 25px;
-}
-#locations .info-content .btn:hover span:after {
-  opacity: 1;
-  right: 0;
+#locations .info-content .btn:hover {
+  background-color: #1d4b4b;
 }
 #locations img {
   border-radius: 20px;
@@ -595,30 +610,55 @@ p {
   height: 15px; 
   background-color: #fccb2b; 
   border-radius: 9px;
+  animation: moving-bar5 2s ease;
+}
+@keyframes moving-bar5 {
+  0% { width: 0;}
+  100% { width: 75%;}
 }
 .bar-4 {
   width: 50%; 
   height: 15px; 
   background-color: #fccb2b; 
   border-radius: 9px;
+  animation: moving-bar4 2s ease;
+}
+@keyframes moving-bar4 {
+  0% { width: 0;}
+  100% { width: 50%;}
 }
 .bar-3 {
   width: 35%; 
   height: 15px; 
   background-color: #fccb2b;
   border-radius: 9px;
+  animation: moving-bar3 2s ease;
+}
+@keyframes moving-bar3 {
+  0% { width: 0;}
+  100% { width: 35%;}
 }
 .bar-2 {
   width: 5%; 
   height: 15px; 
   background-color: #fccb2b;
   border-radius: 9px;
+  animation: moving-bar2 2s ease;
+}
+@keyframes moving-bar2 {
+  0% { width: 0;}
+  100% { width: 5%;}
 }
 .bar-1 {
   width: 13%; 
   height: 15px; 
   background-color: #fccb2b;
   border-radius: 9px;
+  animation: moving-bar1 2s ease;
+}
+@keyframes moving-bar1 {
+  0% { width: 0;}
+  100% { width: 13%;}
 }
 
 /* Review form */
@@ -846,6 +886,21 @@ hr.line {
 #confettiBtn:hover {
   background-color: #df6f2a;
 }
+/* fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+.transition-fade {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.transition-fade-in {
+  opacity: 1;
+}
 /* Events What to expect */
 #events-section {
   background-color: #e8d0b3;
@@ -865,7 +920,7 @@ hr.line {
   height: 200px;
   margin: 0 10px;
   border-radius: 20px;
-  padding: 15px 30px 30px;
+  padding: 45px 30px 10px;
   text-align: center;
   box-sizing: content-box;
 }

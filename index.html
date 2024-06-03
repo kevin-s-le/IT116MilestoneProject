@@ -9,11 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gochi+Hand&display=swap" rel="stylesheet">
-  <script
-    src="https://kit.fontawesome.com/ac6ef5f153.js"
-    crossorigin="anonymous">
-  </script>
-  <body>
+    <script src="https://kit.fontawesome.com/ac6ef5f153.js" crossorigin="anonymous"></script>
+  </head>
+  <body onload="GFG()"> <!-- Google Map Function that execute when pages load-->
     <header>
       <nav id="navbar">
         <div class="nav">
@@ -90,9 +88,18 @@
             We have the pleasure of serving customers at our convenient locations
             in Seattle.
           </p>
-          <a class="btn" href="locations.html"><span>Visit Us</span></a>
+          <button class="btn" id="openMap" href="#"><span>Open Map</span></buton>
         </div>
         <img src="media/exterior.jpg" alt="restaurant exterior">
+        <div id="mapOverlay"></div>
+        <div id="mapContainer">
+          <center>
+            <h3>Find our locations</h3>
+            <!-- Basic container -->
+            <div id="map" style="width: 800px; height: 500px;"></div>
+          </center>
+          <button id="closeMap">Close</button>
+        </div>
       </div>
       <div class="flex-container align">
         <div class="box">
@@ -118,9 +125,7 @@
     <footer id="main-footer">
       <p style="color:white; text-align: center;">Feline Feast &copy; 2024, All Rights Reserved.</p>
     </footer>
-    <script src="code/script.js">
-            src="https://kit.fontawesome.com/ac6ef5f153.js"
-            crossorigin="anonymous"
-    </script>
+    <script src="code/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 </body>
 </html>
