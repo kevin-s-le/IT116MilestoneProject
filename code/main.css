@@ -112,7 +112,7 @@ h2, h3 {
   text-align: center;
 }
 
-/* Number text */
+/* Slideshow text */
 .numbertext {
   color: #e8d0b3;
   font-family: "Gochi Hand";
@@ -158,7 +158,6 @@ p {
   background-color: #174041;
   text-align: center;
   padding: 2.5em;
-  margin-top: 50px;
 }
 #menus h2 {
   font-size: 2em;

@@ -112,8 +112,7 @@
         <button id="popupBtn">Write a review</button>
         <div id="overlay"></div>
         <div id="popup">
-          <form id="ReviewForm">
-            <label for="name">Name:</label>
+          <form action="https://postman-echo.com/post" method="POST" onsubmit="return validateForm()" id="ReviewForm">            <label for="name">Name:</label>
             <input type="text" id="name" name="name">
 
             <label for ="email">Email:</label>
